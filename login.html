@@ -1,46 +1,36 @@
-<!-- login.html (now combined with register) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
     <link rel="stylesheet" href="style.css">
-    <title>ACCESS - FORGOR</title>
 </head>
 <body>
-    <header><h1>LOGIN / REGISTER</h1></header>
-    <main>
-        <select id="form-toggle">
-            <option value="login">LOGIN</option>
-            <option value="register">REGISTER</option>
-        </select>
+    <div class="container">
+        <h3>
+            <img src="assets/icons/icon.png" alt="Icon" style="width: 48px; height: 48px; vertical-align: middle; margin-right: 8px;">
+            FORGOR
+        </h3>
 
-        <form id="login-form">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+        <div class="tabs">
+            <div class="tab active" data-target="login-form">LOGIN</div>
+            <div class="tab" data-target="register-form">REGISTER</div>
+        </div>
 
-        <form id="register-form" style="display:none">
-            <input type="text" placeholder="Username" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">REGISTER</button>
-        </form>
-    </main>
+        <div id="login-form" class="form active">
+            <input type="text" placeholder="USERNAME" id="login-username" autocomplete="username">
+            <input type="password" placeholder="PASSWORD" id="login-password" autocomplete="current-password">
+            <button id="login-button">LOGIN</button>
+        </div>
 
-    <script>
-        const toggle = document.getElementById('form-toggle');
-        const loginForm = document.getElementById('login-form');
-        const registerForm = document.getElementById('register-form');
+        <div id="register-form" class="form">
+            <input type="text" placeholder="PICK USERNAME" id="register-username" autocomplete="username">
+            <input type="password" placeholder="PICK PASSWORD" id="register-password" autocomplete="new-password">
+            <button id="register-button">REGISTER</button>
+        </div>
+    </div>
 
-        toggle.addEventListener('change', (e) => {
-            if (e.target.value === 'login') {
-                loginForm.style.display = 'block';
-                registerForm.style.display = 'none';
-            } else {
-                loginForm.style.display = 'none';
-                registerForm.style.display = 'block';
-            }
-        });
-    </script>
+    <script src="config.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

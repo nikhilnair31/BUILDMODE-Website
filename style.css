@@ -25,6 +25,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+    overflow-x: hidden;
 }
 
 header, footer {
@@ -61,4 +62,80 @@ button {
 main {
     max-width: 600px;
     padding: 2rem;
+}
+
+/* LOGIN */
+.container {
+    width: 310px;
+    background: var(--base-1);
+    padding: 20px;
+    border-radius: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    background-color: var(--accent-2);
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    border: none;
+}
+
+.tab.active {
+    background-color: var(--accent-0);
+    color: var(--accent-1);
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form.active {
+    display: flex;
+}
+
+input {
+    font-family: 'venus_cormier', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    font-size: small;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: var(--base-0);
+    color: var(--white);
+}
+
+button {
+    font-family: 'venus_cormier', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    background-color: var(--accent-1);
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: small;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--accent-2);
 }
