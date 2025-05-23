@@ -5,7 +5,6 @@
     --base-1: #221f31;
     --white: #FFFFFF;
 }
-
 @font-face {
     font-family: 'venus_cormier';
     src: url('/assets/fonts/venus_cormier.otf') format('opentype');
@@ -13,19 +12,30 @@
     font-style: normal;
 }
 
+/* LANDING */
 body {
     margin: 0;
     padding: 0;
     background-color: var(--base-0);
     color: var(--white);
-    font-family: 'venus_cormier', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    overflow-x: hidden;
+    font-family: 'venus_cormier', monospace;
+    text-align: left;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--accent-0);
+    font-size: 7rem;
+    margin: 0.5rem 0;
+    font-weight: normal;
+}
+
+h2 {
+    color: var(--accent-1);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    font-weight: normal;
 }
 
 header, footer {
@@ -34,35 +44,60 @@ header, footer {
     background-color: var(--base-1);
 }
 
+main {
+    padding: 1rem;
+}
+
 nav a {
-    margin: 0 1rem;
-    color: var(--accent-0);
+    color: var(--accent-1);
+}
+section a {
     text-decoration: none;
+    color: var(--accent-1);
+    background-color: var(--accent-0);
+    font-weight: bolder;
 }
 
-input, button, select {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    font-family: 'venus_cormier';
+p.badges {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1rem;
 }
 
-input {
-    background-color: var(--base-1);
-    color: var(--white);
+.badge {
+    padding: 1px 4px;
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 0.9rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+.features li {
+    margin: 0.3rem 0;
 }
 
 button {
+    font-family: 'venus_cormier', monospace;
+    padding: 8px 16px;
     background-color: var(--accent-1);
-    color: var(--white);
+    color: white;
+    border: none;
+    font-size: 0.95rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
-main {
-    max-width: 600px;
-    padding: 2rem;
+a img {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
 }
+
 
 /* LOGIN */
 .container {
