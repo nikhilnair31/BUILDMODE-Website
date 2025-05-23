@@ -1,0 +1,64 @@
+:root {
+    --accent-0: #deff96;
+    --accent-1: #7654b1;
+    --base-0: #1e1c2c;
+    --base-1: #221f31;
+    --white: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'venus_cormier';
+    src: url('/assets/fonts/venus_cormier.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-0);
+    color: var(--white);
+    font-family: 'venus_cormier', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header, footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--base-1);
+}
+
+nav a {
+    margin: 0 1rem;
+    color: var(--accent-0);
+    text-decoration: none;
+}
+
+input, button, select {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'venus_cormier';
+}
+
+input {
+    background-color: var(--base-1);
+    color: var(--white);
+}
+
+button {
+    background-color: var(--accent-1);
+    color: var(--white);
+    cursor: pointer;
+}
+
+main {
+    max-width: 600px;
+    padding: 2rem;
+}

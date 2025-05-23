@@ -1,0 +1,46 @@
+<!-- login.html (now combined with register) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>ACCESS - FORGOR</title>
+</head>
+<body>
+    <header><h1>LOGIN / REGISTER</h1></header>
+    <main>
+        <select id="form-toggle">
+            <option value="login">LOGIN</option>
+            <option value="register">REGISTER</option>
+        </select>
+
+        <form id="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="register-form" style="display:none">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">REGISTER</button>
+        </form>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('form-toggle');
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+
+        toggle.addEventListener('change', (e) => {
+            if (e.target.value === 'login') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
