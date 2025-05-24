@@ -83,7 +83,7 @@ function showResults(results) {
             const imgResponse = await fetch(`${CONFIG.API_BASE}/api/get_image/${result.image_path}`, {
                 headers: headers
             });
-            console.log("Image fetch response:", imgResponse);
+            // console.log("Image fetch response:", imgResponse);
 
             if (!imgResponse.ok) {
                 throw new Error(`Image fetch failed: ${imgResponse.status}`);
@@ -91,20 +91,15 @@ function showResults(results) {
 
             const blob = await imgResponse.blob();
             img.src = URL.createObjectURL(blob);
-        } catch (err) {
+        } 
+        catch (err) {
             console.error("Image fetch error:", err);
             img.alt = 'Failed to load image';
         }
-
-        const tags = document.createElement('pre');
-        tags.textContent = result.image_text.trim();
-
-        const time = document.createElement('p');
-        time.textContent = `Saved on: ${new Date(result.timestamp_str * 1000).toLocaleString()}`;
+        // tags.textContent = result.image_text.trim();
+        // time.textContent = `Saved on: ${new Date(result.timestamp_str * 1000).toLocaleString()}`;
 
         card.appendChild(img);
-        card.appendChild(tags);
-        card.appendChild(time);
 
         resultsDiv.appendChild(card);
     });

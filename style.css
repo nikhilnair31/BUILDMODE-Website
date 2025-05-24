@@ -174,24 +174,14 @@ button:hover {
 
 /* APP */
 .result-card {
-    background-color: var(--base-1);
-    border: 1px solid var(--accent-1);
-    border-radius: 12px;
-    padding: 16px;
-    margin: 12px 0;
-    color: var(--white);
     font-family: 'venus_cormier', monospace;
-    box-shadow: 0 0 6px rgba(118, 84, 177, 0.3);
     display: flex;
-    flex-direction: column;
     gap: 8px;
 }
 
 .result-card img {
     width: 100%;
     max-width: 320px;
-    border: 2px solid var(--accent-0);
-    border-radius: 6px;
 }
 
 .result-card pre {
