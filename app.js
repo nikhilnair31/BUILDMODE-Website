@@ -8,12 +8,12 @@ if (!token) {
     window.location.href = 'login.html';
 }
 
-document.getElementById('user-button').addEventListener('click', () => {
+document.getElementById('userIcon').addEventListener('click', () => {
     window.location.href = '/user';
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('search-bar');
+    const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', (event) => {
         const query = event.target.value;
         console.log("Search query:", query);
@@ -54,7 +54,7 @@ async function searchToServer(content) {
     }
 }
 function showResults(results) {
-    const resultsDiv = document.getElementById('results');
+    const resultsDiv = document.getElementById('responseContent');
     resultsDiv.innerHTML = ''; // clear old results
 
     if (!results || results.length === 0) {
@@ -69,6 +69,7 @@ function showResults(results) {
         card.className = 'result-card';
 
         const img = document.createElement('img');
+        img.loading = 'lazy';
         img.alt = 'Saved post image';
         img.style.width = '200px';
 

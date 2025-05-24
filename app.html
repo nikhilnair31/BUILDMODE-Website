@@ -8,17 +8,23 @@
     <link rel="icon" href="/assets/icons/icon.png" />
 </head>
 <body>
-    <header>
-        <p>WELCOME BACK</p>
-        <nav style="position: absolute; top: 20px; right: 20px;">
-            <button id="user-button">User</button>
-        </nav>
-    </header>
+    <div class="header">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="search for anything">
+            </div>
+        </div>
+        <div id="userIcon" class="user-icon">N</div>   
+    </div>
 
-    <main>
-        <input id="search-bar" type="text" placeholder="Search your memory...">
-        <div id="results"></div>
-    </main>
+    <div id="responseContent" class="masonry-grid">
+        <p class="no-responses">Loading responses...</p>
+    </div>
+
+    <div id="imageModal" style="display:none;">
+        <span id="closeModal">&times;</span>
+        <img id="modalImage" />
+    </div>
 
     <script type="module" src="app.js"></script>
 </body>
