@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sil.buildmode",
+      "sha256_cert_fingerprints": [
+        "A5:E5:BB:44:3F:62:20:4E:3B:F6:17:6D:6D:CA:3C:41:A7:89:75:73:AC:67:E0:97:9A:B7:43:7C:CD:57:18:E3"
+      ]
+    }
+  }
+]
