@@ -1,4 +1,4 @@
-# MIA-2 Server
+# FORGOR Website
 
 ## Initial
 - Clone into git repo
@@ -42,7 +42,6 @@
 ### To-Do
 - [ ] If login clicked from landing then take to app
 - [ ] Improve formatting to be more readable
-- [ ] 
 
 ### Done
-- [x] 
+- [x] Formatted header
