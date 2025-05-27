@@ -41,6 +41,7 @@
 
 ### To-Do
 - [ ] If login clicked from landing then take to app
+- [ ] Improve formatting to be more readable
 - [ ] 
 
 ### Done
