@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <title>Login / Register</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/assets/icons/icon.png" />
+    <link rel="icon" href="/assets/icons/favicon.png" />
 </head>
 <body>
-    <div class="container">
-        <h3>
-            <img src="assets/icons/icon.png" alt="Icon" style="width: 48px; height: 48px; vertical-align: middle; margin-right: 8px;">
-            FORGOR
-        </h3>
-
+    <HEADER>
+        <H1>
+            <img src="assets/icons/favicon.png" alt="Icon" style="width: 64px; height: 64px; vertical-align: middle;">
+            LOG INTO FORGOR
+        </H1>
+    </HEADER>
+    
+    <MAIN>
         <div class="tabs">
             <div class="tab active" data-target="login-form">LOGIN</div>
             <div class="tab" data-target="register-form">REGISTER</div>
@@ -30,7 +32,15 @@
             <input type="password" placeholder="PICK PASSWORD" id="register-password" autocomplete="new-password">
             <button id="register-button">REGISTER</button>
         </div>
-    </div>
+    </MAIN>
+
+    <footer>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/privacy">PRIVACY</a>
+        </nav>
+    </footer>
 
     <script type="module" src="config.js"></script>
     <script type="module" src="login.js"></script>

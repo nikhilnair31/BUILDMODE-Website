@@ -1,3 +1,4 @@
+/* style.css */
 :root {
     --accent-0: #deff96;
     --accent-1: #7654b1;
@@ -13,6 +14,24 @@
 }
 
 /* LANDING */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--base-0);
+    color: var(--white);
+    font-family: 'venus_cormier', monospace;
+}
+
+body > main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +45,7 @@ body {
 
 h1 {
     color: var(--accent-0);
-    font-size: 7rem;
+    font-size: 5rem;
     margin: 0.5rem 0;
     font-weight: normal;
 }
@@ -94,6 +113,12 @@ a img {
     margin-right: 6px;
 }
 
+footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--base-1);
+}
+
 
 /* LOGIN */
 .container {
@@ -125,7 +150,7 @@ a img {
     background-color: var(--accent-2);
     color: white;
     font-weight: bold;
-    font-size: small;
+    font-size: 2rem;
     border: none;
 }
 
@@ -147,8 +172,8 @@ a img {
 input {
     font-family: 'venus_cormier', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 12px;
-    width: 100%;
-    font-size: 4rem;
+    /* width: 100%; */
+    font-size: 2rem;
     border: none;
     outline: none;
     border-radius: 0;
