@@ -42,6 +42,14 @@
 ### To-Do
 - [ ] If login clicked from landing then take to app
 - [ ] Improve formatting to be more readable
+- [ ] Improve each page's contents
+- [ ] Add images
+- [ ] Add actual links to extension and play store
+- [ ] Better old school navigation?
+- [ ] Fix the post data displaying on app screen
+- [ ] Allow for post data to be opened individually
+- [ ] Add delete button
+- [ ] 
 
 ### Done
 - [x] Formatted header
